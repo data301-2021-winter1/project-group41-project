@@ -27,7 +27,7 @@ The dataset that we are using shows the recognizability of 344 popular songs rel
 
 ## References
 
-{Add your stuff here}
-
+https://data.world/the-pudding/decay-of-90s-pop-song-recognition
+https://pudding.cool/2020/07/song-decay/
 
 
