@@ -1,7 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5870682&assignment_repo_type=AssignmentRepo)
-# Group YYY - {Short snappy Title of your project}
-
-- Recognizability of 90s Popular Songs
+# Group 041 - Recognizability of 90s Popular Songs
 
 ## Milestones
 
@@ -29,7 +27,7 @@ The dataset that we are using shows the recognizability of 344 popular songs rel
 
 ## References
 
-{Add your stuff here}
-
+https://data.world/the-pudding/decay-of-90s-pop-song-recognition
+https://pudding.cool/2020/07/song-decay/
 
 
