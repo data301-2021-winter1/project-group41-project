@@ -7,7 +7,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-Interested in looking at musical trends over the course of the past years. Finding things in common as well as seeing how recognizable some older songs are now. Whether it be BPM, genre, mood, or anything else found. Also looking at which artists were big, and still are big. Since the dataset also deals with different data throughout people with different ages and birth years, they can be grouped into different generation groups, in this case, the millenials and gen-Z. It is interesting as well to see how these two generations differ in terms of recognizing these popular 90s songs.
+Interested in looking at musical trends over the course of the past years. Finding things in common as well as seeing how recognizable some older songs are now. Whether it be BPM, genre, mood, or anything else found. Also looking at which artists were big, and still are big. Since the dataset also deals with different data throughout people with different ages and birth years, they can be grouped into different generation groups, in this case, the millenials and gen-Z. It is interesting as well to see how these two generations differ in terms of recognizing these popular 90s songs. Another interest is seing how recognizability of a 90s song changes as the sample of participant age when the song was released decreases, or even comparing recognizability between people who were already born when the song came out to the people who were not born yet at the same time.
 
 ## Describe your dataset in about 150-200 words
 
@@ -17,7 +17,7 @@ The dataset that we are using shows the recognizability of 344 popular songs rel
 
 - Person 1: Andrew Liawan: I am an international student from Indonesia, and I am in my 3rd year majoring in Statistics
 - Person 2: Anisha Parikh: A Psych major, and CS minor, second year, and from Ontario
-- Person 3: one sentence about you!
+- Person 3: Ryota Nishida: 
 
 ## Images
 
