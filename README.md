@@ -7,11 +7,11 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-Interested in looking at musical trends over the course of the past years. Finding things in common as well as seeing how recognizable some older songs are now. Whether it be BPM, genre, mood, or anything else found. Also looking at which artists were big, and still are big. 
+Interested in looking at musical trends over the course of the past years. Finding things in common as well as seeing how recognizable some older songs are now. Whether it be BPM, genre, mood, or anything else found. Also looking at which artists were big, and still are big. Since the dataset also deals with different data throughout people with different ages and birth years, they can be grouped into different generation groups, in this case, the millenials and gen-Z. It is interesting as well to see how these two generations differ in terms of recognizing these popular 90s songs.
 
 ## Describe your dataset in about 150-200 words
 
-The dataset that we are using shows the recognizability of 344 popular songs released in the 1990-1999 decade among different ages. The ages concerned were catrgorized by the participants' ages when the songs in question debuted or released. Data collection was taken from an online music challenge made by pudding.cool. The challenge collected by asking participants their birth year, exposed them to 30 second snippets of 90s songs, and asked them to choose between four choices of answers based on how well they recognize the songs, which are "don't know", "sounds familiar", "know it", and "singing the lyrics". To form the dataset, scores were assigned to each response, with 0 being not familiar with the song at all, and 1 being very familiar with the song. These scores were tallied up and averaged for each song and age. This data collection was taken from participants doing the challenge between April and July of 2020.
+The dataset that we are using shows the recognizability of 344 popular songs released in the 1990-1999 decade among different ages. The ages concerned were catrgorized by the participants' ages when the songs in question debuted or released. Data collection was taken from an online music challenge made by pudding.cool. The challenge collected by asking participants their birth year, exposed them to 30 second snippets of 90s songs, and asked them to choose between four choices of answers based on how well they recognize the songs, which are "don't know", "sounds familiar", "know it", and "singing the lyrics". To form the dataset, scores were assigned to each response, with 0 being not familiar with the song at all, and 1 being very familiar with the song. These scores were tallied up and averaged for each song and age. This data collection was taken from participants doing the challenge between April and July of 2020. Another extra dataset (which came from the same source) also provides data, which grouped millenials and gen-z data based on existing data from individual ages.
 
 ## Team Members
 
@@ -28,6 +28,7 @@ The dataset that we are using shows the recognizability of 344 popular songs rel
 ## References
 
 https://data.world/the-pudding/decay-of-90s-pop-song-recognition
+
 https://pudding.cool/2020/07/song-decay/
 
 
