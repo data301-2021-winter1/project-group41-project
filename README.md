@@ -7,7 +7,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-{Add your stuff here}
+Interested in looking at musical trends over the course of the past years. Finding things in common as well as seeing how recognizable some older songs are now. Whether it be BPM, genre, mood, or anything else found. Also looking at which artists were big, and still are big. 
 
 ## Describe your dataset in about 150-200 words
 
@@ -16,7 +16,7 @@ The dataset that we are using shows the recognizability of 344 popular songs rel
 ## Team Members
 
 - Person 1: Andrew Liawan: I am an international student from Indonesia, and I am in my 3rd year majoring in Statistics
-- Person 2: one sentence about you!
+- Person 2: Anisha Parikh: A Psych major, and CS minor, second year, and from Ontario
 - Person 3: one sentence about you!
 
 ## Images
