@@ -46,7 +46,7 @@ def load_and_process (csv_file1,csv_file2):
     )
     return dfreplace
 def by_artist (df):#grouping songs by artists, and use the grouped data by evaluating the highest data points of mean recognizability (max), indicating most popular songs of the artist
-    dfgroup = df.groupby('artist').max()
+    dfgroup = df.groupby('artist').max().reset_index()
     dfgroupf = dfgroup.drop(columns=['song'])
     return dfgroupf
 def sort_recog (df):#sort the recognizability by the mean of Millennial and Gen-Z recognizability
