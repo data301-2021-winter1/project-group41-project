@@ -53,4 +53,5 @@ def sort_recog (df):#sort the recognizability by the mean of Millennial and Gen-
     df['mean_all'] = (1/2)*(df['Recognition by Millennials']+df['Recognition by Gen-Zs'])
     sortdf = df.sort_values(by=['mean_all'],ascending=False)
     finaldf = sortdf.drop(columns=['mean_all'])
-    return finaldf
+    fdf = finaldf[finaldf['No. of Songs'] >= 3]#Filter out artists with less than 2 songs
+    return fdf
