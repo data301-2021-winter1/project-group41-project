@@ -1,0 +1,2227 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook source-build='2021.3.3 (20213.21.1018.0949)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='recognition_by_generation' inline='true' name='federated.1jd48s50b7rw4i1ggd5ca11sl3c3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='recognition_by_generation' name='textscan.14vob3k1yknnl616eb7ds0m7v1db'>
+            <connection class='textscan' directory='C:/Users/anish/OneDrive/Documents/Year 2 Term 1/DATA301/project-group41-project/data/raw' filename='recognition_by_generation.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.14vob3k1yknnl616eb7ds0m7v1db' name='recognition_by_generation.csv' table='[recognition_by_generation#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='artist' ordinal='0' />
+            <column datatype='string' name='song' ordinal='1' />
+            <column datatype='real' name='mean_millennial_recognition' ordinal='2' />
+            <column datatype='real' name='mean_gen_z_recognition' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.14vob3k1yknnl616eb7ds0m7v1db' name='time_series_90s.csv' table='[time_series_90s#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='artist' ordinal='0' />
+              <column datatype='string' name='song' ordinal='1' />
+              <column datatype='real' name='years_old_13' ordinal='2' />
+              <column datatype='real' name='years_old_12' ordinal='3' />
+              <column datatype='real' name='years_old_11' ordinal='4' />
+              <column datatype='real' name='years_old_10' ordinal='5' />
+              <column datatype='real' name='years_old_9' ordinal='6' />
+              <column datatype='real' name='years_old_8' ordinal='7' />
+              <column datatype='real' name='years_old_7' ordinal='8' />
+              <column datatype='real' name='years_old_6' ordinal='9' />
+              <column datatype='real' name='years_old_5' ordinal='10' />
+              <column datatype='real' name='years_old_4' ordinal='11' />
+              <column datatype='real' name='years_old_3' ordinal='12' />
+              <column datatype='real' name='years_old_2' ordinal='13' />
+              <column datatype='real' name='years_old_1' ordinal='14' />
+              <column datatype='real' name='years_old_0' ordinal='15' />
+              <column datatype='real' name='years_pre_birth_1' ordinal='16' />
+              <column datatype='real' name='years_pre_birth_2' ordinal='17' />
+              <column datatype='real' name='years_pre_birth_3' ordinal='18' />
+              <column datatype='real' name='years_pre_birth_4' ordinal='19' />
+              <column datatype='real' name='years_pre_birth_5' ordinal='20' />
+              <column datatype='real' name='years_pre_birth_6' ordinal='21' />
+              <column datatype='real' name='years_pre_birth_7' ordinal='22' />
+              <column datatype='real' name='years_pre_birth_8' ordinal='23' />
+              <column datatype='real' name='years_pre_birth_9' ordinal='24' />
+              <column datatype='real' name='years_pre_birth_10' ordinal='25' />
+            </columns>
+          </relation>
+          <relation connection='textscan.14vob3k1yknnl616eb7ds0m7v1db' name='recognition_by_generation.csv' table='[recognition_by_generation#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='artist' ordinal='0' />
+              <column datatype='string' name='song' ordinal='1' />
+              <column datatype='real' name='mean_millennial_recognition' ordinal='2' />
+              <column datatype='real' name='mean_gen_z_recognition' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[artist (time_series_90s.csv)]' value='[time_series_90s.csv].[artist]' />
+          <map key='[artist]' value='[recognition_by_generation.csv].[artist]' />
+          <map key='[mean_gen_z_recognition]' value='[recognition_by_generation.csv].[mean_gen_z_recognition]' />
+          <map key='[mean_millennial_recognition]' value='[recognition_by_generation.csv].[mean_millennial_recognition]' />
+          <map key='[song (time_series_90s.csv)]' value='[time_series_90s.csv].[song]' />
+          <map key='[song]' value='[recognition_by_generation.csv].[song]' />
+          <map key='[years_old_0]' value='[time_series_90s.csv].[years_old_0]' />
+          <map key='[years_old_10]' value='[time_series_90s.csv].[years_old_10]' />
+          <map key='[years_old_11]' value='[time_series_90s.csv].[years_old_11]' />
+          <map key='[years_old_12]' value='[time_series_90s.csv].[years_old_12]' />
+          <map key='[years_old_13]' value='[time_series_90s.csv].[years_old_13]' />
+          <map key='[years_old_1]' value='[time_series_90s.csv].[years_old_1]' />
+          <map key='[years_old_2]' value='[time_series_90s.csv].[years_old_2]' />
+          <map key='[years_old_3]' value='[time_series_90s.csv].[years_old_3]' />
+          <map key='[years_old_4]' value='[time_series_90s.csv].[years_old_4]' />
+          <map key='[years_old_5]' value='[time_series_90s.csv].[years_old_5]' />
+          <map key='[years_old_6]' value='[time_series_90s.csv].[years_old_6]' />
+          <map key='[years_old_7]' value='[time_series_90s.csv].[years_old_7]' />
+          <map key='[years_old_8]' value='[time_series_90s.csv].[years_old_8]' />
+          <map key='[years_old_9]' value='[time_series_90s.csv].[years_old_9]' />
+          <map key='[years_pre_birth_10]' value='[time_series_90s.csv].[years_pre_birth_10]' />
+          <map key='[years_pre_birth_1]' value='[time_series_90s.csv].[years_pre_birth_1]' />
+          <map key='[years_pre_birth_2]' value='[time_series_90s.csv].[years_pre_birth_2]' />
+          <map key='[years_pre_birth_3]' value='[time_series_90s.csv].[years_pre_birth_3]' />
+          <map key='[years_pre_birth_4]' value='[time_series_90s.csv].[years_pre_birth_4]' />
+          <map key='[years_pre_birth_5]' value='[time_series_90s.csv].[years_pre_birth_5]' />
+          <map key='[years_pre_birth_6]' value='[time_series_90s.csv].[years_pre_birth_6]' />
+          <map key='[years_pre_birth_7]' value='[time_series_90s.csv].[years_pre_birth_7]' />
+          <map key='[years_pre_birth_8]' value='[time_series_90s.csv].[years_pre_birth_8]' />
+          <map key='[years_pre_birth_9]' value='[time_series_90s.csv].[years_pre_birth_9]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[recognition_by_generation.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artist</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[artist (time_series_90s.csv)]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>artist</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>song</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[song (time_series_90s.csv)]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>song</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_13</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_13]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_13</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_12</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_12]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_12</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_11</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_11]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_11</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_10]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_10</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_9</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_9]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_9</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_8</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_8]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_7</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_7]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_7</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_6]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_6</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_5]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_5</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_4]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_4</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_3]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_3</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_2]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_2</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_1]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_1</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_old_0</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_old_0]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_old_0</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_pre_birth_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_pre_birth_1]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_pre_birth_1</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_pre_birth_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_pre_birth_2]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_pre_birth_2</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_pre_birth_3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_pre_birth_3]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_pre_birth_3</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_pre_birth_4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_pre_birth_4]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_pre_birth_4</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_pre_birth_5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_pre_birth_5]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_pre_birth_5</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_pre_birth_6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_pre_birth_6]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_pre_birth_6</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_pre_birth_7</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_pre_birth_7]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_pre_birth_7</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_pre_birth_8</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_pre_birth_8]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_pre_birth_8</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_pre_birth_9</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_pre_birth_9]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_pre_birth_9</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_pre_birth_10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[years_pre_birth_10]</local-name>
+            <parent-name>[time_series_90s.csv]</parent-name>
+            <remote-alias>years_pre_birth_10</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artist</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[artist]</local-name>
+            <parent-name>[recognition_by_generation.csv]</parent-name>
+            <remote-alias>artist</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[recognition_by_generation.csv_3F8FC56D347C45ABA250FE9AB02E9BE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>song</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[song]</local-name>
+            <parent-name>[recognition_by_generation.csv]</parent-name>
+            <remote-alias>song</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[recognition_by_generation.csv_3F8FC56D347C45ABA250FE9AB02E9BE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mean_millennial_recognition</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mean_millennial_recognition]</local-name>
+            <parent-name>[recognition_by_generation.csv]</parent-name>
+            <remote-alias>mean_millennial_recognition</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[recognition_by_generation.csv_3F8FC56D347C45ABA250FE9AB02E9BE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mean_gen_z_recognition</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mean_gen_z_recognition]</local-name>
+            <parent-name>[recognition_by_generation.csv]</parent-name>
+            <remote-alias>mean_gen_z_recognition</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[recognition_by_generation.csv_3F8FC56D347C45ABA250FE9AB02E9BE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Artist (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[artist]' new-bin='true'>
+          <bin default-name='false' value='&quot;2 Pac&quot;'>
+            <value>&quot;2 Pac&quot;</value>
+            <value>&quot;2Pac&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Mean Gen Z Recognition (bin)' datatype='integer' name='[Mean Gen Z Recognition (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-4' formula='[mean_gen_z_recognition]' peg='0' size='0.0387' />
+      </column>
+      <column caption='Mean Millennial Recognition (bin)' datatype='integer' name='[Mean Millennial Recognition (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-4' formula='[mean_millennial_recognition]' peg='0' size='0.0389' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='recognition_by_generation.csv' datatype='table' name='[__tableau_internal_object_id__].[recognition_by_generation.csv_3F8FC56D347C45ABA250FE9AB02E9BE1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='time_series_90s.csv' datatype='table' name='[__tableau_internal_object_id__].[time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F]' role='measure' type='quantitative' />
+      <column caption='Artist (Time Series 90S.Csv)' datatype='string' name='[artist (time_series_90s.csv)]' role='dimension' type='nominal' />
+      <column caption='Artist' datatype='string' name='[artist]' role='dimension' type='nominal' />
+      <column caption='Mean Gen Z Recognition' datatype='real' name='[mean_gen_z_recognition]' role='measure' type='quantitative' />
+      <column caption='Mean Millennial Recognition' datatype='real' name='[mean_millennial_recognition]' role='measure' type='quantitative' />
+      <column caption='Song (Time Series 90S.Csv)' datatype='string' name='[song (time_series_90s.csv)]' role='dimension' type='nominal' />
+      <column caption='Song' datatype='string' name='[song]' role='dimension' type='nominal' />
+      <column caption='Years Old 0' datatype='real' name='[years_old_0]' role='measure' type='quantitative' />
+      <column caption='Years Old 10' datatype='real' name='[years_old_10]' role='measure' type='quantitative' />
+      <column caption='Years Old 11' datatype='real' name='[years_old_11]' role='measure' type='quantitative' />
+      <column caption='Years Old 12' datatype='real' name='[years_old_12]' role='measure' type='quantitative' />
+      <column caption='Years Old 13' datatype='real' name='[years_old_13]' role='measure' type='quantitative' />
+      <column caption='Years Old 1' datatype='real' name='[years_old_1]' role='measure' type='quantitative' />
+      <column caption='Years Old 2' datatype='real' name='[years_old_2]' role='measure' type='quantitative' />
+      <column caption='Years Old 3' datatype='real' name='[years_old_3]' role='measure' type='quantitative' />
+      <column caption='Years Old 4' datatype='real' name='[years_old_4]' role='measure' type='quantitative' />
+      <column caption='Years Old 5' datatype='real' name='[years_old_5]' role='measure' type='quantitative' />
+      <column caption='Years Old 6' datatype='real' name='[years_old_6]' role='measure' type='quantitative' />
+      <column caption='Years Old 7' datatype='real' name='[years_old_7]' role='measure' type='quantitative' />
+      <column caption='Years Old 8' datatype='real' name='[years_old_8]' role='measure' type='quantitative' />
+      <column caption='Years Old 9' datatype='real' name='[years_old_9]' role='measure' type='quantitative' />
+      <column caption='Years Pre Birth 10' datatype='real' name='[years_pre_birth_10]' role='measure' type='quantitative' />
+      <column caption='Years Pre Birth 1' datatype='real' name='[years_pre_birth_1]' role='measure' type='quantitative' />
+      <column caption='Years Pre Birth 2' datatype='real' name='[years_pre_birth_2]' role='measure' type='quantitative' />
+      <column caption='Years Pre Birth 3' datatype='real' name='[years_pre_birth_3]' role='measure' type='quantitative' />
+      <column caption='Years Pre Birth 4' datatype='real' name='[years_pre_birth_4]' role='measure' type='quantitative' />
+      <column caption='Years Pre Birth 5' datatype='real' name='[years_pre_birth_5]' role='measure' type='quantitative' />
+      <column caption='Years Pre Birth 6' datatype='real' name='[years_pre_birth_6]' role='measure' type='quantitative' />
+      <column caption='Years Pre Birth 7' datatype='real' name='[years_pre_birth_7]' role='measure' type='quantitative' />
+      <column caption='Years Pre Birth 8' datatype='real' name='[years_pre_birth_8]' role='measure' type='quantitative' />
+      <column caption='Years Pre Birth 9' datatype='real' name='[years_pre_birth_9]' role='measure' type='quantitative' />
+      <column-instance column='[mean_millennial_recognition]' derivation='Avg' name='[avg:mean_millennial_recognition:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean_millennial_recognition]' derivation='Count' name='[cnt:mean_millennial_recognition:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean_millennial_recognition]' derivation='CountD' name='[ctd:mean_millennial_recognition:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean_millennial_recognition]' derivation='Stdev' name='[std:mean_millennial_recognition:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean_millennial_recognition]' derivation='Sum' name='[sum:mean_millennial_recognition:qk]' pivot='key' type='quantitative' />
+      <group caption='Artist Set' name='[Artist Set]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='union'>
+          <groupfilter function='member' level='[artist]' member='&quot;2 Pac&quot;' />
+          <groupfilter function='member' level='[artist]' member='&quot;2Pac&quot;' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Artist (group)]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Billy Idol&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Billy Ray Cyrus&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;EMF&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Enigma&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Maxi Priest&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pearl Jam&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Smash Mouth&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tommy Page&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Toni Braxton&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Vanessa Williams and Brian McKnight&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ace Of Base&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Deee-Lite&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Divine&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;En Vogue&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Everything But The Girl&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;LFO&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sixpence None The Richer&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Third Eye Blind&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Timmy T&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tony Rich Project&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tracie Spencer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Celine Dion&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Coolio&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;H-Town&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Heart&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ini Kamoze&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lauryn Hill&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lisa Loeb and Nine Stories&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;LSG&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Shai&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sheryl Crow&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Wilson Phillips&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Calloway&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Dr. Dre&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Hanson&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Keith Sweat&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lou Bega&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New Edition&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Next&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Patty Smyth&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Peabo Bryson and Regina Bell&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Will Smith&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Adina Howard&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Alias&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;B-52&apos;s, The&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bette Midler&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Michael Bolton&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Montell Jordan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ralph Tresvant&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sugar Ray&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tag Team&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Warren G&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bell Biv DeVoe&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jesus Jones&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jewel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Karyn White&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;New Kids On The Block&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Phil Collins&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Prince&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Real McCoy&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Snap!&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Somethin&apos; For The People&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Whitney Houston&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2 Pac&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Atlantic Starr&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bon Jovi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Donna Lewis&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;John Mellencamp&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Notorious B.I.G., The&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;R.E.M.&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Styx&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;SWV&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Vanessa Williams&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Billy Joel&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Boyz II Men&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Brandy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cathy Dennis&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Guns N&apos; Roses&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;House Of Pain&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;James Ingram&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Luther Vandross&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Nelson&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ricky Martin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tara Kemp&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bone Thugs N Harmony&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;diVINYLS&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Janet Jackson&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mark Morrison&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Milli Vanilli&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Puff Daddy&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Right Said Fred&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Seal&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Seduction&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Soul For Real&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Alannah Myles&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bobby Brown&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;C and C Music Factory&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Christina Aguilera&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Damn Yankees&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dru Hill&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Lenny Kravitz&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mariah Carey&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Marky Mark and The Funky Bunch&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Rod Stewart&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Silk&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Amy Grant&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Bryan Adams&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Crash Test Dummies&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Glenn Medeiros&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jennifer Paige&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;K-Ci and JoJo&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;M.C. Hammer&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nicki French&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Spice Girls, The&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Taylor Dayne&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Babyface&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Backstreet Boys, The&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cher&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Destiny&apos;s Child&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Eric Clapton&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jody Watley&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;PM Dawn&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Quad City DJ&apos;s&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Usher&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Wreckx-N-Effect&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Alanis Morissette&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Allure&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;C+C Music Factory&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Duran Duran&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kris Kross&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lisa Stansfield&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Monica&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Paula Abdul&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Pebbles&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Savage Garden&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Barenaked Ladies&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Brandy and Monica&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Busta Rhymes&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jade&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Michael Jackson&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Onyx&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Puff Daddy and Faith Evans&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Roxette&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;UB40&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Xscape&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Aerosmith&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jane Child&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;LL Cool J&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Marc Anthony&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Method Man&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mr. Big&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Red Hot Chili Peppers&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sarah McLachlan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Surface&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tracy Chapman&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;702&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BLACKstreet&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Changing Faces&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;DJ Jazzy Jeff and The Fresh Prince&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Janet&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Johnny Gill&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Merril Bainbridge&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Santana&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Shania Twain&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sinead O&apos;Connor&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;All Saints&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;All-4-One&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Enrique Iglesias&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Heights, The&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jessica Simpson&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LeAnn Rimes&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Madonna&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mary J. Blige&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Shaggy&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sweet Sensation&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Vanilla Ice&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Brian McKnight&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Britney Spears&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;D.R.S.&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Extreme&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hi-Five&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Joe Public&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Meat Loaf&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Proclaimers, The&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;R. Kelly&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shanice&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Deborah Cox&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Elton John&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;George Michael&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Los Del Rio&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Maxwell&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Meredith Brooks&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Poison&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sir Mix-A-Lot&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Stevie B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Technotronic&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Color Me Badd&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Gloria Estefan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jennifer Lopez&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Joan Osborne&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jodeci&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jon Bon Jovi&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Londonbeat&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Salt &apos;N Pepa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Scorpions&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Snow&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;TLC&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[avg:mean_millennial_recognition:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[cnt:mean_millennial_recognition:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[ctd:mean_millennial_recognition:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[std:mean_millennial_recognition:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[sum:mean_millennial_recognition:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='recognition_by_generation.csv' id='recognition_by_generation.csv_3F8FC56D347C45ABA250FE9AB02E9BE1'>
+            <properties context=''>
+              <relation connection='textscan.14vob3k1yknnl616eb7ds0m7v1db' name='recognition_by_generation.csv' table='[recognition_by_generation#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='artist' ordinal='0' />
+                  <column datatype='string' name='song' ordinal='1' />
+                  <column datatype='real' name='mean_millennial_recognition' ordinal='2' />
+                  <column datatype='real' name='mean_gen_z_recognition' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='time_series_90s.csv' id='time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F'>
+            <properties context=''>
+              <relation connection='textscan.14vob3k1yknnl616eb7ds0m7v1db' name='time_series_90s.csv' table='[time_series_90s#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='artist' ordinal='0' />
+                  <column datatype='string' name='song' ordinal='1' />
+                  <column datatype='real' name='years_old_13' ordinal='2' />
+                  <column datatype='real' name='years_old_12' ordinal='3' />
+                  <column datatype='real' name='years_old_11' ordinal='4' />
+                  <column datatype='real' name='years_old_10' ordinal='5' />
+                  <column datatype='real' name='years_old_9' ordinal='6' />
+                  <column datatype='real' name='years_old_8' ordinal='7' />
+                  <column datatype='real' name='years_old_7' ordinal='8' />
+                  <column datatype='real' name='years_old_6' ordinal='9' />
+                  <column datatype='real' name='years_old_5' ordinal='10' />
+                  <column datatype='real' name='years_old_4' ordinal='11' />
+                  <column datatype='real' name='years_old_3' ordinal='12' />
+                  <column datatype='real' name='years_old_2' ordinal='13' />
+                  <column datatype='real' name='years_old_1' ordinal='14' />
+                  <column datatype='real' name='years_old_0' ordinal='15' />
+                  <column datatype='real' name='years_pre_birth_1' ordinal='16' />
+                  <column datatype='real' name='years_pre_birth_2' ordinal='17' />
+                  <column datatype='real' name='years_pre_birth_3' ordinal='18' />
+                  <column datatype='real' name='years_pre_birth_4' ordinal='19' />
+                  <column datatype='real' name='years_pre_birth_5' ordinal='20' />
+                  <column datatype='real' name='years_pre_birth_6' ordinal='21' />
+                  <column datatype='real' name='years_pre_birth_7' ordinal='22' />
+                  <column datatype='real' name='years_pre_birth_8' ordinal='23' />
+                  <column datatype='real' name='years_pre_birth_9' ordinal='24' />
+                  <column datatype='real' name='years_pre_birth_10' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[artist (time_series_90s.csv)]' />
+                <expression op='[artist]' />
+              </expression>
+              <expression op='='>
+                <expression op='[song (time_series_90s.csv)]' />
+                <expression op='[song]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='time_series_90s.csv_120364F2C1BE4117B15DB1AAD1EAEA4F' />
+            <second-end-point object-id='recognition_by_generation.csv_3F8FC56D347C45ABA250FE9AB02E9BE1' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Most Recognized Artists</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='recognition_by_generation' name='federated.1jd48s50b7rw4i1ggd5ca11sl3c3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jd48s50b7rw4i1ggd5ca11sl3c3'>
+            <column datatype='string' name='[Artist (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[artist]' new-bin='true'>
+                <bin default-name='false' value='&quot;2 Pac&quot;'>
+                  <value>&quot;2 Pac&quot;</value>
+                  <value>&quot;2Pac&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Artist' datatype='string' name='[artist]' role='dimension' type='nominal' />
+            <column-instance column='[mean_gen_z_recognition]' derivation='Avg' name='[avg:mean_gen_z_recognition:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mean_millennial_recognition]' derivation='Avg' name='[avg:mean_millennial_recognition:qk]' pivot='key' type='quantitative' />
+            <column caption='Mean Gen Z Recognition' datatype='real' name='[mean_gen_z_recognition]' role='measure' type='quantitative' />
+            <column caption='Mean Millennial Recognition' datatype='real' name='[mean_millennial_recognition]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[avg:mean_millennial_recognition:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#eae4ee</color>
+                <color>#e4d8ec</color>
+                <color>#decce9</color>
+                <color>#d8c1e7</color>
+                <color>#d3b5e5</color>
+                <color>#cdaae2</color>
+                <color>#c79fe0</color>
+                <color>#c194dd</color>
+                <color>#bc89db</color>
+                <color>#b77fd9</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[Artist (group)]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='1.6811602115631104' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[avg:mean_millennial_recognition:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='1.6811602115631104' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[avg:mean_gen_z_recognition:qk]'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='1.6811602115631104' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[Artist (group)]</rows>
+        <cols>([federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[avg:mean_millennial_recognition:qk] + [federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[avg:mean_gen_z_recognition:qk])</cols>
+      </table>
+      <simple-id uuid='{82812666-55FB-42CD-BAE8-667AEFC7D90B}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Most Recognized Songs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='recognition_by_generation' name='federated.1jd48s50b7rw4i1ggd5ca11sl3c3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jd48s50b7rw4i1ggd5ca11sl3c3'>
+            <column-instance column='[mean_gen_z_recognition]' derivation='Avg' name='[avg:mean_gen_z_recognition:qk]' pivot='key' type='quantitative' />
+            <column caption='Mean Gen Z Recognition' datatype='real' name='[mean_gen_z_recognition]' role='measure' type='quantitative' />
+            <column caption='Mean Millennial Recognition' datatype='real' name='[mean_millennial_recognition]' role='measure' type='quantitative' />
+            <column-instance column='[song]' derivation='None' name='[none:song:nk]' pivot='key' type='nominal' />
+            <column caption='Song' datatype='string' name='[song]' role='dimension' type='nominal' />
+            <column-instance column='[mean_millennial_recognition]' derivation='Sum' name='[sum:mean_millennial_recognition:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d37295' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[avg:mean_gen_z_recognition:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d37295' />
+                <format attr='size' value='1.6151933670043945' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[sum:mean_millennial_recognition:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d37295' />
+                <format attr='size' value='1.6151933670043945' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[none:song:nk]</rows>
+        <cols>([federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[avg:mean_gen_z_recognition:qk] + [federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[sum:mean_millennial_recognition:qk])</cols>
+      </table>
+      <simple-id uuid='{B2E91285-FAEE-4444-91A3-706A2D079D01}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Most Recognized Artist by Both Generations</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='recognition_by_generation' name='federated.1jd48s50b7rw4i1ggd5ca11sl3c3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jd48s50b7rw4i1ggd5ca11sl3c3'>
+            <column datatype='string' name='[Artist (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[artist]' new-bin='true'>
+                <bin default-name='false' value='&quot;2 Pac&quot;'>
+                  <value>&quot;2 Pac&quot;</value>
+                  <value>&quot;2Pac&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Artist' datatype='string' name='[artist]' role='dimension' type='nominal' />
+            <column caption='Mean Gen Z Recognition' datatype='real' name='[mean_gen_z_recognition]' role='measure' type='quantitative' />
+            <column caption='Mean Millennial Recognition' datatype='real' name='[mean_millennial_recognition]' role='measure' type='quantitative' />
+            <column-instance column='[mean_gen_z_recognition]' derivation='Sum' name='[sum:mean_gen_z_recognition:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mean_millennial_recognition]' derivation='Sum' name='[sum:mean_millennial_recognition:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[sum:mean_millennial_recognition:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#ebe3ee</color>
+                <color>#e6d6ec</color>
+                <color>#e1c9e9</color>
+                <color>#dcbce7</color>
+                <color>#d7b0e5</color>
+                <color>#d2a3e2</color>
+                <color>#ce97e0</color>
+                <color>#c98cdd</color>
+                <color>#c480db</color>
+                <color>#c075d9</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[sum:mean_gen_z_recognition:qk]' />
+              <text column='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[Artist (group)]' />
+              <color column='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[sum:mean_millennial_recognition:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{18DE8E51-E621-40D8-A3DB-A266502713E6}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Millennial Recognition
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='recognition_by_generation' name='federated.1jd48s50b7rw4i1ggd5ca11sl3c3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jd48s50b7rw4i1ggd5ca11sl3c3'>
+            <column caption='Mean Millennial Recognition (bin)' datatype='integer' name='[Mean Millennial Recognition (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-4' formula='[mean_millennial_recognition]' peg='0' size='0.0389' />
+            </column>
+            <column-instance column='[mean_millennial_recognition]' derivation='Count' name='[cnt:mean_millennial_recognition:qk]' pivot='key' type='quantitative' />
+            <column caption='Mean Millennial Recognition' datatype='real' name='[mean_millennial_recognition]' role='measure' type='quantitative' />
+            <column-instance column='[Mean Millennial Recognition (bin)]' derivation='None' name='[none:Mean Millennial Recognition (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[cnt:mean_millennial_recognition:qk]</rows>
+        <cols>[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[none:Mean Millennial Recognition (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[Mean Millennial Recognition (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{1AC5CD2A-3E11-457A-89E9-8CC651982FFF}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Generation Z Recogition</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='recognition_by_generation' name='federated.1jd48s50b7rw4i1ggd5ca11sl3c3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jd48s50b7rw4i1ggd5ca11sl3c3'>
+            <column caption='Mean Gen Z Recognition (bin)' datatype='integer' name='[Mean Gen Z Recognition (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-4' formula='[mean_gen_z_recognition]' peg='0' size='0.0387' />
+            </column>
+            <column-instance column='[mean_gen_z_recognition]' derivation='Count' name='[cnt:mean_gen_z_recognition:qk]' pivot='key' type='quantitative' />
+            <column caption='Mean Gen Z Recognition' datatype='real' name='[mean_gen_z_recognition]' role='measure' type='quantitative' />
+            <column-instance column='[Mean Gen Z Recognition (bin)]' derivation='None' name='[none:Mean Gen Z Recognition (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[cnt:mean_gen_z_recognition:qk]</rows>
+        <cols>[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[none:Mean Gen Z Recognition (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[Mean Gen Z Recognition (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{0504E676-3652-40F9-82D0-EFDD7001DA4D}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{396A9B1E-2D6B-4CE8-B025-732D7A65D06B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='79250' id='6' param='horz' type-v2='layout-flow' w='98400' x='800' y='19750'>
+            <zone fixed-size='86' h='79250' id='5' is-fixed='true' param='vert' type-v2='layout-flow' w='98400' x='800' y='19750'>
+              <zone h='6500' id='9' type-v2='dashboard-object' w='98400' x='800' y='19750'>
+                <button action='tabdoc:goto-sheet window-id=&quot;{AFD1F3C9-77F9-4458-A2A2-5300EB62B4F5}&quot;' button-type='text'>
+                  <button-visual-state>
+                    <caption>All Visuals</caption>
+                    <button-caption-font-style fontcolor='#ffffff' fontname='Verdana' fontsize='12' />
+                    <format attr='background-color' value='#b07aa1' />
+                  </button-visual-state>
+                </button>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='11' type-v2='dashboard-object' w='98400' x='800' y='26250'>
+                <button action='tabdoc:goto-sheet window-id=&quot;{D564CCA3-3900-4255-8ED5-CB63BF971F4E}&quot;' button-type='text'>
+                  <button-visual-state>
+                    <caption>Recognition of Artists</caption>
+                    <button-caption-font-style fontcolor='#ffffff' fontname='Verdana' fontsize='12' />
+                    <format attr='background-color' value='#b07aa1' />
+                  </button-visual-state>
+                </button>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='12' type-v2='dashboard-object' w='98400' x='800' y='32750'>
+                <button action='tabdoc:goto-sheet window-id=&quot;{3435A598-C80A-4E62-8FB7-93BF3CF01555}&quot;' button-type='text'>
+                  <button-visual-state>
+                    <caption>Recognition of Songs</caption>
+                    <button-caption-font-style fontcolor='#ffffff' fontname='Verdana' fontsize='12' />
+                    <format attr='background-color' value='#c290b4' />
+                  </button-visual-state>
+                </button>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='13' type-v2='dashboard-object' w='98400' x='800' y='39250'>
+                <button action='tabdoc:goto-sheet window-id=&quot;{D67D17C8-42A4-46D6-88F6-FE75DF0A7D9E}&quot;' button-type='text'>
+                  <button-visual-state>
+                    <caption>Combined Recognition of Artists</caption>
+                    <button-caption-font-style fontcolor='#ffffff' fontname='Verdana' fontsize='12' />
+                    <format attr='background-color' value='#c290b4' />
+                  </button-visual-state>
+                </button>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='14' type-v2='dashboard-object' w='98400' x='800' y='45750'>
+                <button action='tabdoc:goto-sheet window-id=&quot;{BB488153-057D-43EC-A0CA-60243DEF193B}&quot;' button-type='text'>
+                  <button-visual-state>
+                    <caption>Distribution of Recognition by Millennials</caption>
+                    <button-caption-font-style fontcolor='#ffffff' fontname='Verdana' fontsize='12' />
+                    <format attr='background-color' value='#d4a6c8' />
+                  </button-visual-state>
+                </button>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='15' type-v2='dashboard-object' w='98400' x='800' y='52250'>
+                <button action='tabdoc:goto-sheet window-id=&quot;{A4596FF9-9B06-4837-B1DF-6AE3A9C83FE1}&quot;' button-type='text'>
+                  <button-visual-state>
+                    <caption>Distribution of Recognition by Generation Z</caption>
+                    <button-caption-font-style fontcolor='#ffffff' fontname='Verdana' fontsize='12' />
+                    <format attr='background-color' value='#d4a6c8' />
+                  </button-visual-state>
+                </button>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='18750' id='10' type-v2='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#000000' fontname='Verdana Pro' fontsize='20'>RECOGNITION OF 90S SONGS BY GENERATION</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='18' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='18750' id='10' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Verdana Pro' fontsize='20'>RECOGNITION OF 90S SONGS BY GENERATION</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='9' type-v2='dashboard-object' w='98400' x='800' y='19750'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{AFD1F3C9-77F9-4458-A2A2-5300EB62B4F5}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>All Visuals</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Verdana' fontsize='12' />
+                      <format attr='background-color' value='#b07aa1' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='11' type-v2='dashboard-object' w='98400' x='800' y='26250'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{D564CCA3-3900-4255-8ED5-CB63BF971F4E}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Recognition of Artists</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Verdana' fontsize='12' />
+                      <format attr='background-color' value='#b07aa1' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='12' type-v2='dashboard-object' w='98400' x='800' y='32750'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{3435A598-C80A-4E62-8FB7-93BF3CF01555}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Recognition of Songs</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Verdana' fontsize='12' />
+                      <format attr='background-color' value='#c290b4' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='13' type-v2='dashboard-object' w='98400' x='800' y='39250'>
+                  <button action='' button-type='text'>
+                    <button-visual-state>
+                      <caption>Combined Recognition of Artists</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Verdana' fontsize='12' />
+                      <format attr='background-color' value='#c290b4' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='14' type-v2='dashboard-object' w='98400' x='800' y='45750'>
+                  <button action='' button-type='text'>
+                    <button-visual-state>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='15' type-v2='dashboard-object' w='98400' x='800' y='52250'>
+                  <button action='' button-type='text'>
+                    <button-visual-state>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F0E23F3C-4417-41B7-8515-BAAA345DC2FC}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98518' id='8' param='horz' type-v2='layout-flow' w='99166' x='417' y='741'>
+            <zone h='98518' id='6' type-v2='layout-basic' w='90103' x='417' y='741'>
+              <zone h='49259' id='3' name='Sheet 1' w='45047' x='417' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='59815' id='5' name='Sheet 3' w='45056' x='45464' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49259' id='10' name='Sheet 2' w='45047' x='417' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38703' id='11' name='Sheet 4' w='22528' x='67992' y='60556'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38703' id='12' name='Sheet 5' w='22528' x='45464' y='60556'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='174' h='98518' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='9063' x='90520' y='741'>
+              <zone h='6760' id='9' name='Sheet 3' pane-specification-id='0' param='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[sum:mean_millennial_recognition:qk]' type-v2='color' w='9063' x='90520' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1350' minheight='1350' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98518' id='15' param='vert' type-v2='layout-flow' w='99166' x='417' y='741'>
+                <zone fixed-size='280' h='49259' id='3' is-fixed='true' name='Sheet 1' w='45414' x='417' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49259' id='5' is-fixed='true' name='Sheet 3' w='45419' x='45831' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6760' id='9' name='Sheet 3' pane-specification-id='0' param='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[sum:mean_millennial_recognition:qk]' type-v2='color' w='8333' x='91250' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49259' id='10' is-fixed='true' name='Sheet 2' w='45414' x='417' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='189' h='24629' id='11' is-fixed='true' name='Sheet 4' w='45419' x='45831' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='189' h='24630' id='12' is-fixed='true' name='Sheet 5' w='45419' x='45831' y='74629'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E5517752-C57F-4C14-A3DC-F626A9A4BFB1}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D564CCA3-3900-4255-8ED5-CB63BF971F4E}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3435A598-C80A-4E62-8FB7-93BF3CF01555}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1jd48s50b7rw4i1ggd5ca11sl3c3].[sum:mean_millennial_recognition:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D67D17C8-42A4-46D6-88F6-FE75DF0A7D9E}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB488153-057D-43EC-A0CA-60243DEF193B}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A4596FF9-9B06-4837-B1DF-6AE3A9C83FE1}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{47E798B6-FF15-46AB-B672-CE06A2731741}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview selected='Desktop' visible='true'>
+        <device name='Generic Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{AFD1F3C9-77F9-4458-A2A2-5300EB62B4F5}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='30'>
+            <card type='columns' />
+          </strip>
+          <strip size='30'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BA58582A-A087-487A-9FFC-A436D71EB634}' />
+    </window>
+  </windows>
+</workbook>
